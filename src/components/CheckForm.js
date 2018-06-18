@@ -10,13 +10,13 @@ class CheckForm extends React.Component {
     tip: PropTypes.string,
     split: PropTypes.string,
     updateCheckCallback: PropTypes.func.isRequired,
-  }
+  };
 
   onInputChange = (event) => {
     const key = event.target.name;
     const value = event.target.value;
     this.props.updateCheckCallback(key, value);
-  }
+  };
 
   // Inputs all look pretty much the same, so we'll
   // use a helepr method to construct them.
